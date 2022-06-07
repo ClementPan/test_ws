@@ -4,7 +4,7 @@ const todos = require('../../models/todo')
 
 router.get('/:id', (req, res) => {
   const id = req.params.id
-  res.send({
+  res.status(200).json({
     returnCode: 200,
     body: {
       route: ' /todos/' + id,
@@ -16,7 +16,7 @@ router.get('/:id', (req, res) => {
 
 router.get('/:id/edit', (req, res) => {
   const id = req.params.id
-  res.send({
+  res.status(200).json({
     returnCode: 200,
     body: {
       route: '/:id/edit',
@@ -26,7 +26,7 @@ router.get('/:id/edit', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  res.send({
+  res.status(200).json({
     returnCode: 200,
     body: {
       route: '/todos',

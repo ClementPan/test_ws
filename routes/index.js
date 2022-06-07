@@ -7,7 +7,7 @@ const todos = require('./modules/todos')
 router.use('/todos', todos)
 router.use('/', home)
 router.use('**', (req, res) => {
-  res.send({
+  res.status(200).json({
     returnCode: 200,
     body: {
       message: 'cound not find ' + req.originalUrl
