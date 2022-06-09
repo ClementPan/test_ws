@@ -4,14 +4,14 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const cors = require('cors')
 const SocketServer = require('ws').Server
-// const bodyParser = require('body-parser')
-// const methodOverride = require('method-override')
-// const { urlencoded } = require('body-parser')
+const bodyParser = require('body-parser')
+const methodOverride = require('method-override')
+const { urlencoded } = require('body-parser')
 // const routes = require('./routes')
 
 app.use(cors())
-// app.use(methodOverride('_method'))
-// app.use(bodyParser.urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
+app.use(bodyParser.urlencoded({ extended: true }))
 // app.use(routes)
 
 const server = app.listen(PORT, () => console.log(`Listening on ${PORT}`))
