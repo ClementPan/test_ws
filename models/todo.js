@@ -36,4 +36,4 @@ const todos = [
     message: 'a2fasdf awe '
   },
 ]
-module.exports = todos
+module.exports = { todos }

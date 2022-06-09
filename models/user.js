@@ -1,16 +1,19 @@
 // set Schema
-const userSchema = {
-  firstName: {
-    type: String,
-    required: true
+const users = [
+  {
+    firstName: 'Aawda',
+    email: 'xdfawe@sdfwe',
+    password: 'awegtrj',
   },
-  email: {
-    type: String,
-    required: true
+  {
+    firstName: 'Allfqfq',
+    email: 'ffafa@546',
+    password: 'wefwef',
   },
-  password: {
-    type: String,
-    required: true
-  }
-}
-module.exports = userSchema
+  {
+    firstName: 'Klle',
+    email: 'waef@vawerg2',
+    password: 'awefwef',
+  },
+]
+module.exports = { users }
