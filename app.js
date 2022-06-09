@@ -48,6 +48,6 @@ const setReturnContent = (content) => {
   } else if (content === 'todos') {
     return todos
   }
-  return 'SURE WILL DO'
+  return content
 
 }
